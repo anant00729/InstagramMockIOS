@@ -115,7 +115,7 @@ class SignUpController: UIViewController, UIImagePickerControllerDelegate , UINa
         
         view.addSubview(signInButton)
         
-        signInButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        signInButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         signInButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         signInButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         signInButton.heightAnchor.constraint(equalToConstant: 50).isActive = true

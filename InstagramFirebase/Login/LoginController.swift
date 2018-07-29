@@ -140,7 +140,7 @@ class LoginController: UIViewController {
         
         setupInputFields()
         view.addSubview(signUpButton)
-        signUpButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        signUpButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         signUpButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         signUpButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         signUpButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
